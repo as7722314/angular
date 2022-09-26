@@ -1,0 +1,54 @@
+<button class="clsoeNavBtn" *ngIf="visible" mat-icon-button color="primary"
+    (click)="visibleChange()">
+    <mat-icon>close</mat-icon>
+</button>
+
+<c-sidebar [visible]="visible" class="d-print-none sidebar sidebar-fixed">
+    <c-sidebar-brand>
+        Menu
+        <button class="mx-1" cButton color="success" variant="ghost"
+            (click)="visibleChange()">
+            <svg [cIcon]="icons.cilAccountLogout" size="xl" title="List Icon"></svg>
+        </button>
+    </c-sidebar-brand>
+    <!-- <c-sidebar-nav [navItems]="navItems"></c-sidebar-nav> -->
+    <c-nav class="flex-column">
+        <c-nav-item class="nav-link" *ngFor="let item of navItems">
+            <a [routerLink]="item.url" routerLinkActive="link-active" cNavLink
+                (click)="visibleChange()">
+                <span>{{item.name}}</span>
+            </a>
+        </c-nav-item>
+    </c-nav>
+</c-sidebar>
+
+<div class="wrapper d-flex flex-column min-vh-100 bg-light dark:bg-transparent">
+    <ng-container class="mb-4 d-print-none header header-sticky">
+        <c-header>
+            <c-container>
+                <button cButton color="white"
+                    (click)="visibleChange()">
+                    <svg [cIcon]="icons.cilHamburgerMenu" size="xl" title="List
+                        Icon"></svg>
+                </button>
+                <c-header-brand [routerLink] class="mx-2">Home</c-header-brand>
+                <c-header-nav class="ms-auto">
+                    <c-nav-item>
+                        <button mat-icon-button [matMenuTriggerFor]="menu">
+                            <mat-icon>expand_circle_down</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item (click)="Logout()">登出</button>
+                        </mat-menu>
+                    </c-nav-item>
+                </c-header-nav>
+            </c-container>
+        </c-header>
+    </ng-container>
+    <!--app-body-->
+    <div class="body flex-grow-1 px-3">
+        <c-container breakpoint="lg" class="mt-2">
+            <router-outlet></router-outlet>
+        </c-container>
+    </div>
+</div>

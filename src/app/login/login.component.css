@@ -1,0 +1,19 @@
+.login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px
+}
+
+.login-card {
+    width: 320px;
+    padding: 25px;
+    border: solid 0.2px rgb(206, 206, 206);
+    border-radius: 10%;
+}
+
+.example-full-width{
+    width: 100%;
+}

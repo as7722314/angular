@@ -1,0 +1,21 @@
+<div class="customer-user-dialog">
+    <h1 mat-dialog-title>User Detail</h1>
+    <div mat-dialog-content>
+        <mat-card class="mb-4 mat-elevation-z0">
+            <mat-card-content>
+                <p cCardText>
+                    Name => {{data.user.name}}
+                </p>
+                <p cCardText>
+                    Email => {{ data.user.email }}
+                </p>
+                <p cCardText>
+                    ID => {{data.user.id}}
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Close</button>
+    </div>
+</div>

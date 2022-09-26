@@ -1,0 +1,24 @@
+@import '~@coreui/coreui/dist/css/coreui.min.css';
+
+.nav-link a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.nav-link a:hover {
+    background-color: rgb(124, 196, 245);
+}
+
+.link-active {
+    background-color: rgb(136, 63, 253);
+}
+
+.clsoeNavBtn {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    z-index: 9999;
+}

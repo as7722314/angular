@@ -1,0 +1,13 @@
+<div class="example-container">
+    <form ngForm ngNativeValidate>
+        Form
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your name</mat-label>
+            <input matInput name="name" [(ngModel)]="user.name" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput name="email" [(ngModel)]="user.email" required>
+        </mat-form-field>
+    </form>
+</div>
