@@ -1,61 +1,70 @@
 <ng-container>
-    <div class="container">
-        <mat-card class="mb-4 mx-auto profile-card">
-            <mat-card-content>
-                <p cCardText>
-                    Name => {{user.name}}
-                </p>
-                <p cCardText>
-                    Email => {{ user.email }}
-                </p>
-                <p cCardText>
-                    ID => {{user.id}}
-                </p>
-                <button mat-raised-button color="primary">Go somewhere</button>
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="mb-4 mx-auto profile-card">
-            <mat-card-content>
-                <p cCardText>
-                    Name => {{user.name}}
-                </p>
-                <p cCardText>
-                    Email => {{ user.email }}
-                </p>
-                <p cCardText>
-                    ID => {{user.id}}
-                </p>
-                <button mat-raised-button color="primary">Go somewhere</button>
-            </mat-card-content>
-        </mat-card>
-        <mat-card class="mb-4 mx-auto profile-card">
-            <mat-card-content>
-                <p cCardText>
-                    Name => {{user.name}}
-                </p>
-                <p cCardText>
-                    Email => {{ user.email }}
-                </p>
-                <p cCardText>
-                    ID => {{user.id}}
-                </p>
-                <button mat-raised-button color="primary">Go somewhere</button>
-            </mat-card-content>
-        </mat-card>
-        <mat-card class="mb-4 mx-auto profile-card">
-            <mat-card-content>
-                <p cCardText>
-                    Name => {{user.name}}
-                </p>
-                <p cCardText>
-                    Email => {{ user.email }}
-                </p>
-                <p cCardText>
-                    ID => {{user.id}}
-                </p>
-                <button mat-raised-button color="primary">Go somewhere</button>
-            </mat-card-content>
-        </mat-card>
-    </div>
+    <c-container>
+        <c-row [xs]="1" [sm]="2" [md]="3" [lg]="4">
+            <c-col>
+                <mat-card class="mb-4 mx-auto profile-card">
+                    <mat-card-content>
+                        <p cCardText>
+                            Name => {{user.name}}
+                        </p>
+                        <p cCardText>
+                            Email => {{ user.email }}
+                        </p>
+                        <p cCardText>
+                            ID => {{user.id}}
+                        </p>
+                        <button mat-raised-button color="primary">Go somewhere</button>
+                    </mat-card-content>
+                </mat-card>
+            </c-col>
+            <c-col>
+                <mat-card class="mb-4 mx-auto profile-card">
+                    <mat-card-content>
+                        <p cCardText>
+                            Name => {{user.name}}
+                        </p>
+                        <p cCardText>
+                            Email => {{ user.email }}
+                        </p>
+                        <p cCardText>
+                            ID => {{user.id}}
+                        </p>
+                        <button mat-raised-button color="primary">Go somewhere</button>
+                    </mat-card-content>
+                </mat-card>
+            </c-col>
+            <c-col>
+                <mat-card class="mb-4 mx-auto profile-card">
+                    <mat-card-content>
+                        <p cCardText>
+                            Name => {{user.name}}
+                        </p>
+                        <p cCardText>
+                            Email => {{ user.email }}
+                        </p>
+                        <p cCardText>
+                            ID => {{user.id}}
+                        </p>
+                        <button mat-raised-button color="primary">Go somewhere</button>
+                    </mat-card-content>
+                </mat-card>
+            </c-col>
+            <c-col>
+                <mat-card class="mb-4 mx-auto profile-card">
+                    <mat-card-content>
+                        <p cCardText>
+                            Name => {{user.name}}
+                        </p>
+                        <p cCardText>
+                            Email => {{ user.email }}
+                        </p>
+                        <p cCardText>
+                            ID => {{user.id}}
+                        </p>
+                        <button mat-raised-button color="primary">Go somewhere</button>
+                    </mat-card-content>
+                </mat-card>
+            </c-col>
+        </c-row>
+    </c-container>
 </ng-container>

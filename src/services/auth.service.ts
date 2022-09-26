@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { UserDto } from "src/app/dto/UserDto";
 
-@Injectable({ providedIn: "root" })
+@Injectable()
 export class AuthService {
     baseUrl: string = 'http://localhost:5069/api/auth/user';
     user = new UserDto();

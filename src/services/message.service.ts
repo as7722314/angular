@@ -6,7 +6,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 
 
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class MessageService {
     constructor(private _snackBar: MatSnackBar) { }
 
@@ -17,7 +17,7 @@ export class MessageService {
         });
         this.close();
     }
-    
+
     close() {
         setTimeout(() => this._snackBar.dismiss(), 3500)
     }

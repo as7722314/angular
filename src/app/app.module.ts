@@ -26,6 +26,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { OrderModule } from './order/order.module';
+import { ServiceModule } from 'src/services/service.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -73,6 +74,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatSnackBarModule,
 
     OrderModule,
+    ServiceModule
   ],
   providers: [
     IconSetService,

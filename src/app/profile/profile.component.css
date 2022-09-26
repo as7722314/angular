@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -44,4 +44,8 @@
     .profile-card {
         width: calc(100% - 50px);
     }
+} */
+
+.profile-card {
+    border-radius: 20px;
 }
